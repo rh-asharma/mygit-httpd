@@ -22,7 +22,7 @@ RUN echo "Pidfile /tmp/httpd.pid" >> /etc/httpd/conf/httpd.conf
 
 RUN echo "The Web Server is Running" > /var/www/html/index.html
 
-EXPOSE 80
+EXPOSE 8080 80
 
 ADD run-httpd.sh /run-httpd.sh
 RUN chmod -v +x /run-httpd.sh
