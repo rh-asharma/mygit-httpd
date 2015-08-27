@@ -1,0 +1,13 @@
+[Unit]
+Description=Apache HTTP Server
+After=syslog.target network.target
+
+[Service]
+EnvironmentFile=/etc/sysconfig/httpd
+Type=forking
+ExecStart=/usr/sbin/httpd $OPTIONS
+ExecReload=/usr/sbin/httpd -k restart
+ExecStop=/usr/sbin/httpd -k stop
+
+[Install]
+WantedBy=multi-user.target

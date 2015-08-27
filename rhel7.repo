@@ -1,0 +1,11 @@
+[rhel7]
+name=rhel7
+baseurl=http://172.16.83.1/repos/rhel7.1
+enabled=1
+gpgcheck=0
+
+[rhel7-optional]
+name=rhel7-optional
+baseurl=http://172.16.83.1/repos/OSP6REPOS/rhel-7-server-optional-rpms/
+enabled=1
+gpgcheck=0
