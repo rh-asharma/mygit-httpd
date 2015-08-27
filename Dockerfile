@@ -1,4 +1,4 @@
-FROM 172.16.83.159:5000/rhel7.1
+FROM 172.16.83.159:5000/rhel7.1:latest
 
 MAINTAINER “AMIT SHARMA” <amit@redhat.com>
 
